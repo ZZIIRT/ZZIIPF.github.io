@@ -1,3 +1,7 @@
-# ZZIIPF.github.io
+# Resume / Portfolio For Work
 
-This is PROFILE/RESUME
+🫐 Моë портфолио/резюме, для поиска работы
+
+🍏 Стек - Html, Css, Js, Boostrap
+
+🍑 Удачного использования, сайт - ZZII.SITE
