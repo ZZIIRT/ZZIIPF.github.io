@@ -1,422 +1,140 @@
 <!DOCTYPE html>
-<html lang="Ru-Us">
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>ZZII | Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords"
-    content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-  <meta name="author" content="ZZI STUDIO">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZZII | Portfolio</title>
 
+	<!-- CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="tools/css/index.css">
+	<link rel="stylesheet" href="tools/css/media/media.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="msapplication-TileColor" content="#080032">
-  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="icon" href="/assets/img/Netherite.png">
-
-  <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css" />
-  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/css/theme-max.css">
-
-
-  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
-
-
-  <style>
-    .page-loading {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: all .4s .2s ease-in-out;
-      transition: all .4s .2s ease-in-out;
-      background-color: #c6c4c4;
-      opacity: 0;
-      visibility: hidden;
-      z-index: 9999;
-    }
-
-    .dark-mode .page-loading {
-      background-color: #0b0f19;
-    }
-
-    .page-loading.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .page-loading-inner {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -webkit-transition: opacity .2s ease-in-out;
-      transition: opacity .2s ease-in-out;
-      opacity: 0;
-    }
-
-    .page-loading.active>.page-loading-inner {
-      opacity: 1;
-    }
-
-    .page-loading-inner>span {
-      display: block;
-      font-size: 1rem;
-      font-weight: normal;
-      color: #9397ad;
-    }
-
-    .dark-mode .page-loading-inner>span {
-      color: #fff;
-      opacity: .6;
-    }
-
-    .page-spinner {
-      display: inline-block;
-      width: 2.75rem;
-      height: 2.75rem;
-      margin-bottom: .75rem;
-      vertical-align: text-bottom;
-      border: .15em solid #b4b7c9;
-      border-right-color: transparent;
-      border-radius: 50%;
-      -webkit-animation: spinner .75s linear infinite;
-      animation: spinner .75s linear infinite;
-    }
-
-    .dark-mode .page-spinner {
-      border-color: rgba(255, 255, 255, .4);
-      border-right-color: transparent;
-    }
-
-    @-webkit-keyframes spinner {
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes spinner {
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-  </style>
-
-  <!-- Theme mode -->
-  <script>
-    let mode = window.localStorage.getItem('mode'),
-      root = document.getElementsByTagName('html')[0]
-    if (mode !== null && mode === 'dark') {
-      root.classList.add('dark-mode')
-    } else {
-      root.classList.remove('dark-mode')
-    }
-  </script>
-
-  <script>
-    (function () {
-      window.onload = function () {
-        const preloader = document.querySelector('.page-loading')
-        preloader.classList.remove('active')
-        setTimeout(function () {
-          preloader.remove()
-        }, 1000)
-      }
-    })();
-  </script>
+	<!-- ICON -->
+	<link rel="icon" href="tools/img/icon.png">
 
 </head>
 
-
-<!-- Body -->
-
 <body>
+	<div id="particles-js"></div>
+
+	<section class='header'>
+		<div class="header">
+			<div class="header-info">
+				<div class="header-logo">
+					<a href=''>ZZII | Portfolio</a>
+				</div>
+				<div class="header-text">
+					<i class='bx bx-home'></i>
+					<a href='#home'>Home</a>
+					<i class='bx bxs-contact'></i>
+					<a href="#contact" id="scroll-to-bottom">Contact</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='main'>
+		<div class="container-main">
+			<div class="text-title-main">
+				<h1>ZZII <span class='logo-color'>RTK</span></h1>
+				<div class="desciption-title">
+					<p id='delete-js'> Я готов обсудить детали и возможности сотрудничества в более подробном формате. Если у вас
+						есть дополнительные вопросы или требуется дополнительная информация, буду рад обсудить это в <span
+							class="typer" data-typer-words="Vkontakte;Discord;Telegram" data-typer-cursor="_" data-typer-erase="true"
+							data-typer-delay="200"></span>
+					</p>
+					<div class="button-down-title">
+						<a href="https://vk.com/rztkaytka">
+							<button>Let's start with me</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-img-ava">
+				<img src="tools/img/icon.png" alt="">
+			</div>
+		</div>
+
+		<div class="container-continue">
+			<div class="title-main-second">
+				<p>Experience Work</p>
+			</div>
+			<div class="container-carts">
+				<div class="cart__one">
+					<img src="tools/img/1.png" alt="">
+					<h1>Work with Linux</h1>
+					<p>Debain && Ubuntu ?? Fedora</p>
+					<p>Iptables, Ngnix, GeoIP</p>
+					<p>And Other..</p>
+				</div>
+				<div class="cart__two">
+					<img src="tools/img/2.png" alt="">
+					<h1>Do Minecraft Project</h1>
+					<p>Paper, PuferFish, Purpur</p>
+					<p>Grief/Anarchy/BoxPvP</p>
+				</div>
+				<div class="cart__three">
+					<img src="tools/img/3.png" alt="">
+					<h1>FrontEnd && BackEnd</h1>
+					<p>Html, Css, Js, Vue, React, NodeJS, PhP</p>
+					<p>And Other..</p>
+				</div>
+				<div class="cart__four">
+					<img src="tools/img/4.png" alt="">
+					<h1>Plugin Developer</h1>
+					<p>Spigot API ( 1 years )</p>
+					<p>Plugins such as - Canyon, AirDrops, Vulcan</p>
+					<p>These are not all plugins, only some</p>
+				</div>
+			</div>
+
+			<div class="container-contact">
+				<div class="contact-text">
+					<p>Contact With Me</p>
+					<div class="links-contact">
+						<a href="https://discord.gg/pA388aVaaW"><i class='bx bxl-discord-alt'></i></a>
+						<a href="https://t.me/ZZIIRK"><i class='bx bxl-telegram'></i></a>
+						<a href="https://vk.com/rztkaytka"><i class='bx bxl-vk'></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='footer'>
+		<div class="footer-container">
+			<div class="container-logo">
+				<p>ZZII | RTK</p>
+				<div class="contact-info-footer">
+					<a href="https://discord.gg/pA388aVaaW" aria-label="Discord"><i class='bx bxl-discord-alt'></i></a>
+					<a href="https://t.me/ZZIIRK" aria-label="Telegram"><i class='bx bxl-telegram'></i></a>
+					<a href="https://vk.com/rztkaytka" aria-label="VK"><i class='bx bxl-vk'></i></a>
+				</div>
+			</div>
+			<div class="other-information">
+				<p>Email: info@root.com</p>
+				<p>CopyRight © ZZII 2024</p>
+			</div>
+		</div>
+	</section>
 
 
-
-  <div class="page-loading active">
-    <div class="page-loading-inner">
-      <div class="page-spinner"></div><span>Загрузочка..</span>
-    </div>
-  </div>
-
-  <main class="page-wrapper">
-
-    <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
-      <div class="container px-3">
-        <a href="https://vk.com/rztkaytka" class="navbar-brand pe-3">
-          <img src="assets/img/Netherite.png" width="47" alt="Silicon">
-          ZZII / Portfolio
-        </a>
-        <div id="navbarNav" class="offcanvas offcanvas-end">
-
-          <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-              <li class="nav-item dropdown">
-                <a href="https://vk.com/rztkaytka" class="nav-link " data-bs-toggle="dropdown">Контакты</a>
-              </li>
-
-            </ul>
-          </div>
-
-        </div>
-        <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-          <input type="checkbox" class="form-check-input" id="theme-mode">
-          <label class="form-check-label d-none d-sm-block" for="theme-mode">Свет</label>
-          <label class="form-check-label d-none d-sm-block" for="theme-mode">Темнота</label>
-        </div>
-        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-      </div>
-    </header>
-
-
-
-    <nav class="container py-4 mb-md-2 mb-lg-5 mt-lg-3" <!-- AIR -->
-    </nav>
-
-
-    <!-- Title -->
-    <section class="container pb-5 mb-md-2 mb-lg-4 mb-xl-5">
-      <div class="row pb-5 mb-md-2 mb-lg-4 mb-xl-5">
-        <div class="col-lg-6">
-          <h1 class="display-2 mb-0">Custom Developer on Minecraft Servers</h1>
-        </div>
-        <div class="col-lg-6 col-xl-5 offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
-          <p class="fs-xl pb-4 mb-1 mb-md-2 mb-xl-3">
-            Я готов обсудить детали и возможности сотрудничества в более подробном формате. Если у вас есть
-            дополнительные вопросы или требуется дополнительная информация, буду рад обсудить это в личных сообщениях.
-          </p>
-          <a href="https://vk.com/rztkaytka" class="btn btn-lg btn-primary shadow-primary">Создать Проект</a>
-        </div>
-      </div>
-      <hr>
-    </section>
-
-
-
-    <section class="overflow-hidden pt-md-2 pt-lg-3 pb-3 pb-md-4 pb-xl-5">
-      <div class="container">
-        <div class="d-flex flex-column flex-md-row flex-md-nowrap align-items-start">
-          <div class="col-md-7 ps-0 pe-lg-4 mb-5 mb-md-0">
-            <div style="max-width: 660px;">
-              <h2 class="h1 pb-3 mb-2 mb-md-3">Мои Предложения</h2>
-              <div class="row row-cols-1 row-cols-sm-2 gx-lg-5 g-4">
-                <div class="col pt-1 pt-sm-2 pt-lg-3">
-                  <i class="bx bx-rocket d-block fs-2 text-primary mb-2 mb-sm-3"></i>
-                  <h3 class="h5 pb-sm-1 mb-2">О Проекте</h3>
-                  <p class="mb-0">Мы стремимся к идеальному майнкрафт серверу! У меня есть собственные разработки,
-                    уникальные квесты и т.д. Сделаем майнкрафт еще более захватывающим.</p>
-                </div>
-                <div class="col pt-1 pt-sm-2 pt-lg-3">
-                  <i class="bx bx-like d-block fs-2 text-primary mb-2 mb-sm-3"></i>
-                  <h3 class="h5 pb-sm-1 mb-2">Обновления</h3>
-                  <p class="mb-0">Наш майнкрафт сервер находится в постоянной разработке. Мы внедряем новые фичи,
-                    создаем уникальные декорации и разрабатываем увлекательные квесты. </p>
-                </div>
-                <div class="col pt-1 pt-sm-2 pt-lg-3">
-                  <i class="bx bx-group d-block fs-2 text-primary mb-2 mb-sm-3"></i>
-                  <h3 class="h5 pb-sm-1 mb-2">О Комманде</h3>
-                  <p class="mb-0">Я создаю уникальные плагины и моды для нашего сервера, чтобы добавить в майнкрафт
-                    нечто особенное</p>
-                </div>
-                <div class="col pt-1 pt-sm-2 pt-lg-3">
-                  <i class="bx bx-time-five d-block fs-2 text-primary mb-2 mb-sm-3"></i>
-                  <h3 class="h5 pb-sm-1 mb-2">Время</h3>
-                  <p class="mb-0">Время на нашем майнкрафт сервере движется в такт с вашиими желаниями. Мы устраиваем
-                    специальные ивенты, связанные с временем года!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img src="assets/img/services/single/dashboard.png" width="836" class="ms-3 ms-sm-5 ms-xl-3" alt="Dashboard">
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="container pb-5 mb-md-2 mb-lg-4 mb-xl-5">
-      <h2 class="h1 pb-2 pb-md-0 mb-4 mb-md-5">Как я Работаю?</h2>
-      <div class="steps steps-sm steps-horizontal-md pb-2 pb-sm-3">
-        <div class="step">
-          <div class="step-number">
-            <div class="step-number-inner">1</div>
-          </div>
-          <div class="step-body">
-            <h3 class="h4 mb-3">Сбор информации для выявления проблемы</h3>
-
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">
-            <div class="step-number-inner">2</div>
-          </div>
-          <div class="step-body">
-            <h3 class="h4 mb-3">Анализирование..</h3>
-
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">
-            <div class="step-number-inner">3</div>
-          </div>
-          <div class="step-body">
-            <h3 class="h4 mb-3">Делаю прототип сборки и обсуждаем</h3>
-
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">
-            <div class="step-number-inner">4</div>
-          </div>
-          <div class="step-body">
-            <h3 class="h4 mb-3">Оформления Discord/Vk/Project</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- Image + Text sections -->
-    <section class="container pb-sm-1 pb-md-3">
-
-      <!-- Row 1 -->
-      <div class="row align-items-lg-center pb-5 mb-2 mb-lg-4 mb-xl-5">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <img src="assets/img/services/single/image01.jpg" class="rounded-3" alt="Image">
-        </div>
-        <div class="col-md-6">
-          <div class="ps-xl-5 ms-md-2 ms-lg-4">
-            <h2 class="h1 mb-3 mb-sm-4">Мы персонализируем нашу работу в соответствии с потребностями вашего проекта
-            </h2>
-            <p class="mb-4 mb-lg-5">Работа с Docker , Linux (Debain , Ubuntu and etc) , GitLab , GitHub, Phpmyadmin,
-              MySQL, MongoDB, PHP, Apache , Ngnix, Iptables, FireWall , Pterodactel, VManager, CloudFlare, Unity + C# ,
-              BootStrap Studio, SSh, SSl</p>
-            <a href="https://vk.com/rztkaytka" class="btn btn-lg btn-primary shadow-primary">Создать Проект</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="row align-items-lg-center pt-md-3 pb-5 mb-2 mb-lg-4 mb-xl-5">
-        <div class="col-md-6 order-md-2 mb-4 mb-md-0">
-          <img src="assets/img/services/single/image02.jpg" class="rounded-3" alt="Image">
-        </div>
-        <div class="col-md-6 order-md-1">
-          <div class="pe-xl-5 me-md-2 me-lg-4">
-            <h2 class="h1 mb-3 mb-sm-4">Разработка продукта с лучшим опытом</h2>
-            <p class="mb-3 mb-sm-4">Мы специализируемся на создании разнообразных сложных веб разработок, а также
-              уникальных плагинов! Соответствующих различным потребностям проекта.</p>
-            <ul class="list-unstyled mb-0">
-              <li class="d-flex mb-2">
-                <i class="bx bx-check text-primary lead me-2"></i>
-                Быстрота
-              </li>
-              <li class="d-flex mb-2">
-                <i class="bx bx-check text-primary lead me-2"></i>
-                Сборка
-              </li>
-              <li class="d-flex">
-                <i class="bx bx-check text-primary lead me-2"></i>
-                Качество
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-  <!-- Footer -->
-  <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
-    <div class="container pt-lg-4">
-      <div class="row pb-5">
-        <div class="col-lg-4 col-md-6">
-          <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-            <img src="assets/img/Netherite.png" width="47" alt="Silicon">
-            ZZII / Portfolio
-          </div>
-          <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Добрый вечер/утро ! Меня зовут Андрей, и я хотел бы
-            выразить свой интерес к роли Технического администратора/Кодера/Сис.Админа на вашем сервере.</p>
-        </div>
-        <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
-          <div id="footer-links" class="row">
-            <div class="col-lg-4">
-              <h6 class="mb-2">
-                <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                  data-bs-toggle="collapse">Useful Links</a>
-              </h6>
-              <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                <h3>Главное</h3>
-                <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                  <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Главная</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Сервисы</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">О мне</a></li>
-
-                </ul>
-
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-3">
-              <h6 class="mb-2">
-                <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                  data-bs-toggle="collapse">Socials</a>
-              </h6>
-              <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                <ul class="nav flex-column mb-2 mb-lg-0">
-                  <h3>Соц-Сети</h3>
-                  <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Vkontakte</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Discord</a></li>
-
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-
-
-  <a href="#top" class="btn-scroll-top" data-scroll>
-    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-  </a>
-
-
-
-  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-
-  <script src="assets/js/theme.min.js"></script>
 </body>
 
+<script src='tools/js/particles.js'></script>
+
+<script>
+	particlesJS.load('particles-js', 'assets/particles.json', function () {
+		console.log('callback - particles.js config loaded')
+	});
+</script>
+
+<script src='tools/js/slider/slider.js'></script>
+<script type="text/javascript" src='tools/js/delete.js'></script>
+<script src="tools/js/smooth-scroll.js"></script>
+<script src='tools/js/blocked/button.js'></script>
+<script src='tools/js/blocked/link.js'></script>
 
 </html>
